@@ -10,9 +10,10 @@ interface UiSectionProps extends HTMLAttributes<HTMLDivElement> {
 const UiSection: FC<UiSectionProps> = ({
   children,
   size = "medium",
+  className,
   ...props
 }) => {
-  const classNames = joinClasses(styles.section, styles[size]);
+  const classNames = joinClasses(className, styles.section, styles[size]);
   return (
     <div className={classNames} {...props}>
       {children}
