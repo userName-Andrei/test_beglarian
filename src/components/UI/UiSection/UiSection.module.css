@@ -1,0 +1,16 @@
+.section {
+  border: 1px solid var(--grey);
+  border-radius: 20px;
+  background-color: var(--background-white);
+}
+
+.section.big {
+  padding: 24px;
+}
+
+.section.medium {
+  padding: 16px 12px;
+}
+
+.section.small {
+}
