@@ -1,5 +1,4 @@
 import { Tests } from "@/types";
-import test from "node:test";
 import { create } from "zustand";
 
 interface TestsState {
@@ -25,32 +24,32 @@ function getDoneCount(tests: Tests[]): number {
 
 /**
  * @description Creating test states using the zustand library
- * @example  
- *  const { setTests, tests, count, doneCount } = useTestsStore();
-    setTests([]);
-    console.log(tests, count, doneCount) // [], 0, 0
  */
 
 export const useTestsStore = create<TestsState>()((set) => ({
   tests: [],
   count: 0,
   doneCount: 0,
+
   /**
    * @description A method for changing the state of tests
    * @param {Tests[]} by
    * @returns {void}
    */
+
   setTests: (by: Tests[]): void =>
     set(() => ({
       tests: by,
       count: by.length,
       doneCount: getDoneCount(by),
     })),
+
   /**
    *@description A method for changing the status of a specific test item
    * @param {string} id
    * @returns {void}
    */
+
   changeItemStatusById: (id: string): void =>
     set((state) => {
       /**
