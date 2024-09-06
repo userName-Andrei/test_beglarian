@@ -1,0 +1,30 @@
+.block {
+  margin-bottom: 8px;
+}
+
+.chevron {
+  margin-top: 17px;
+  flex-shrink: 0;
+}
+
+.capIcon {
+  flex-shrink: 0;
+}
+
+/* Сделано так, чтобы избежать переполнения. Также класс .chevron */
+.lesson_text {
+  margin-top: 6px;
+}
+
+.lesson_name {
+  font-weight: var(--bold);
+  font-size: var(--fz20);
+  line-height: 130%;
+}
+
+.lesson_category {
+  font-weight: var(--regular);
+  font-size: var(--fz14);
+  line-height: 143%;
+  color: var(--text-grey);
+}

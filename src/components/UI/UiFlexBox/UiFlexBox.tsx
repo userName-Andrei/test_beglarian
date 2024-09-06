@@ -6,6 +6,7 @@ interface UiFlexBoxProps extends React.HTMLProps<HTMLDivElement> {
   col?: boolean;
   grow?: boolean;
   shrink?: boolean;
+  wrap?: React.CSSProperties["flexWrap"];
   basis?: React.CSSProperties["flexBasis"];
   gap?: number;
   style?: React.CSSProperties;
@@ -22,6 +23,7 @@ const UiFlexBox: FC<UiFlexBoxProps> = ({
   grow,
   shrink,
   basis,
+  wrap,
   ...props
 }) => {
   const flexStyles: React.CSSProperties = {
@@ -33,6 +35,7 @@ const UiFlexBox: FC<UiFlexBoxProps> = ({
     ...(grow && { flexGrow: grow ? 1 : 0 }),
     ...(shrink && { flexShrink: shrink ? 0 : 1 }),
     flexBasis: basis,
+    flexWrap: wrap,
     ...style,
   };
 

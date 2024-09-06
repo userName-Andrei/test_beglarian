@@ -1,0 +1,22 @@
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.box {
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}

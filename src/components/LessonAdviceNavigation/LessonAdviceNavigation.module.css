@@ -1,0 +1,19 @@
+.navWrapper {
+  margin-bottom: 24px;
+}
+
+.navItem {
+  width: 160px;
+  cursor: pointer;
+}
+
+.navItem:nth-of-type(5) {
+  width: 100%;
+}
+
+.text {
+  font-weight: var(--medium);
+  font-size: var(--fz16);
+  line-height: 125%;
+  color: var(--text-secondary);
+}
