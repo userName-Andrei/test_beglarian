@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Beglarian test app",
 };
 
-export default function RootLayout({
+export default function LayoutWithNavigation({
   children,
 }: Readonly<{
   children: React.ReactNode;
