@@ -15,3 +15,4 @@ export * from "./BookIcon";
 export * from "./FavoritesIcon";
 export * from "./CrownIcon";
 export * from "./FireIcon";
+export * from "./BackArrowIcon";
