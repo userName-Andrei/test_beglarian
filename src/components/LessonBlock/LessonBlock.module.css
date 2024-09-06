@@ -11,7 +11,7 @@
   flex-shrink: 0;
 }
 
-/* Сделано так, чтобы избежать переполнения. Также класс .chevron */
+/* Designed to avoid text overflow. Also class .chevron */
 .lesson_text {
   margin-top: 6px;
 }

@@ -3,9 +3,11 @@
 }
 
 .header {
-  width: 100%;
-  padding: 15px 0px;
   margin-bottom: 8px;
+}
+
+.header__body {
+  width: 100%;
 }
 
 .text {
