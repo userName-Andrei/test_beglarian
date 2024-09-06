@@ -1,19 +1,21 @@
+"use client";
+
 import React from "react";
 import styles from "./LearningProgress.module.css";
 import UiFlexBox from "../UI/UiFlexBox/UiFlexBox";
 import ProgressBar from "../ProgressBar/ProgressBar";
+import { useTestsStore } from "@/store";
 
-const LearningProgress = () => {
-  const completed = 112;
-  const all = 730;
+export const LearningProgress = () => {
+  const { count, doneCount } = useTestsStore();
   return (
     <UiFlexBox col gap={8}>
       <p className={styles.info}>
-        {completed} questions out of {all} passed
+        {doneCount} questions out of {count} passed
       </p>
-      <ProgressBar maxValue={all} value={completed} bars={7} />
+      <ProgressBar value={doneCount} maxValue={count} bars={7} />
     </UiFlexBox>
   );
 };
 
-export default LearningProgress;
+// export default LearningProgress;

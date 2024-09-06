@@ -6,7 +6,7 @@ import CapIcon from "@/icons/CapIcon";
 import ChevronRightIcon from "@/icons/ChevronRightIcon";
 
 import styles from "./LessonBlock.module.css";
-import LearningProgress from "../LearningProgress/LearningProgress";
+import { LearningProgress } from "../LearningProgress/LearningProgress";
 import Link from "next/link";
 
 interface LessonBlockProps {

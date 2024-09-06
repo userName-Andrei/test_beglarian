@@ -1,7 +1,5 @@
-import type { Metadata } from "next";
 import "./globals.css";
 import { inter } from "./fonts";
-import App from "next/app";
 import { AppInitializer } from "@/components";
 
 export default function RootLayout({
