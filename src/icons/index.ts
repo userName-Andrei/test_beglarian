@@ -7,7 +7,7 @@ export * from "./ChevronRightIcon";
 export * from "./LexamIcon";
 export * from "./GamepadIcon";
 export * from "./TvPlayIcon";
-export * from "./RoundArrowRight";
+export * from "./RoundArrowRightIcon";
 export * from "./RocketIcon";
 export * from "./PencilIcon";
 export * from "./StatisticIcon";
