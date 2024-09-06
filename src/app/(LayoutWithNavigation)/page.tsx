@@ -6,7 +6,6 @@ import HeaderIconBox from "@/components/HeaderIconBox/HeaderIconBox";
 import LessonBlock from "@/components/LessonBlock/LessonBlock";
 import LessonAdviceNavigation from "@/components/LessonAdviceNavigation/LessonAdviceNavigation";
 import LessonNavigation from "@/components/LessonNavigation/LessonNavigation";
-import Navigation from "@/components/Navigation/Navigation";
 import Header from "@/components/Header/Header";
 
 export default function Home() {
@@ -31,8 +30,6 @@ export default function Home() {
       <LessonAdviceNavigation />
 
       <LessonNavigation />
-
-      <Navigation />
     </main>
   );
 }
