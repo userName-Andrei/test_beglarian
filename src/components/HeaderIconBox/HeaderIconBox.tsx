@@ -9,12 +9,13 @@ interface HeaderIconBoxProps {
 }
 
 const HeaderIconBox: FC<HeaderIconBoxProps> = ({ iconJSX, text }) => {
+  const classNames = joinClasses(
+    styles.box,
+    text ? styles.box_text : undefined
+  );
+
   return (
-    <UiFlexBox
-      className={joinClasses(styles.box, String(text) && styles.box_text)}
-      justify="center"
-      align="center"
-    >
+    <UiFlexBox className={classNames} justify="center" align="center" gap={4}>
       {iconJSX && iconJSX}
       {text && <span className={styles.text}>{text}</span>}
     </UiFlexBox>
