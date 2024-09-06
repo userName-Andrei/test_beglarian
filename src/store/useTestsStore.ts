@@ -9,6 +9,14 @@ interface TestsState {
   setTests: (by: Tests[]) => void;
 }
 
+/**
+ * @description Creating test states using the zustand library
+ * @example  
+ *  const { setTests, tests, count, doneCount } = useTestsStore();
+    setTests([]);
+    console.log(tests, count, doneCount) // [], 0, 0
+ */
+
 export const useTestsStore = create<TestsState>()((set) => ({
   tests: [],
   count: 0,

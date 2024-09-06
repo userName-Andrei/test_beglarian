@@ -15,5 +15,5 @@ export const AppInitializer = async ({ children }: AppInitializerProps) => {
 
   setTests(newTests);
 
-  return children;
+  return <>{children}</>;
 };

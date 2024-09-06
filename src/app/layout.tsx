@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { inter } from "./fonts";
+import App from "next/app";
+import { AppInitializer } from "@/components";
 
 export default function RootLayout({
   children,
@@ -9,7 +11,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <AppInitializer>
+        <body className={inter.className}>{children}</body>
+      </AppInitializer>
     </html>
   );
 }
