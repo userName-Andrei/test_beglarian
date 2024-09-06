@@ -11,9 +11,9 @@ import Header from "@/components/Header/Header";
 export default function Home() {
   return (
     <main className={styles.content}>
-      <Header backBtn>
+      <Header className={styles.header}>
         <UiFlexBox
-          className={styles.header}
+          className={styles.header__body}
           justify="space-between"
           align="center"
         >
