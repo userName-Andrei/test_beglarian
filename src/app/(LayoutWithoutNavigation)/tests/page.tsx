@@ -4,7 +4,7 @@ import React from "react";
 import styles from "./page.module.css";
 import NavLink from "@/components/UI/NavLink/NavLink";
 import UiFlexBox from "@/components/UI/UiFlexBox/UiFlexBox";
-import LearningList from "@/components/LearningList/LearningList";
+import { LearningList } from "@/components/LearningList/LearningList";
 
 const Tests = () => {
   return (
