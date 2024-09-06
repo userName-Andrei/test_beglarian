@@ -6,7 +6,7 @@ import { usePathname, useRouter } from "next/navigation";
 
 interface NavLinkProps extends LinkProps {
   href: string;
-  exact: boolean;
+  exact?: boolean;
   children: React.ReactNode;
   className: string;
   activeClass: string;

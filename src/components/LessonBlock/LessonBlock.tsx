@@ -28,7 +28,7 @@ const LessonBlock: FC<LessonBlockProps> = ({ name, category }) => {
                 backgroundColor="#FFE3DD"
                 backgroundOpacity={0.5}
               />
-              {/* Можно было бы сделать align: center, но тогда при переполнении иконки будут в центре */}
+              {/* It would be possible to do align: center, but then when the text overflows, the icons will be in the center */}
               <UiFlexBox className={styles.lesson_text} col>
                 <p className={styles.lesson_name}>{name}</p>
                 <p className={styles.lesson_category}>{category}</p>
