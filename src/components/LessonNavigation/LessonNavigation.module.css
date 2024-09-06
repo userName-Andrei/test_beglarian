@@ -1,0 +1,10 @@
+.item {
+  width: 58px;
+  cursor: pointer;
+}
+
+.text {
+  font-size: var(--fz14);
+  line-height: 143%;
+  text-align: center;
+}
