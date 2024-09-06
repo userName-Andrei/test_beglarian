@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import "../globals.css";
-import { inter } from "../fonts";
 import Container from "@/components/UI/Container/Container";
 import Navigation from "@/components/Navigation/Navigation";
 
@@ -15,11 +13,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Container withNavigation>{children}</Container>
-        <Navigation />
-      </body>
-    </html>
+    <>
+      <Container withNavigation>{children}</Container>
+      <Navigation />
+    </>
   );
 }
