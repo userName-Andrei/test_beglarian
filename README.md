@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Beglarian test app
+
+The project is written using [Next.js](https://nextjs.org)
+
+Our team uses the [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable) package manager.
 
 ## Getting Started
 
-First, run the development server:
+Clone a repository
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+#using SSH:
+git clone git@github.com:userName-Andrei/test_beglarian.git
+#or using HTTPS:
+git clone git@github.com:userName-Andrei/test_beglarian.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to directory
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+cd test_beglarian
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+After installing the [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable) package manager on your computer, run the command to install dependencies:
 
-## Learn More
+```
+yarn
+```
 
-To learn more about Next.js, take a look at the following resources:
+To start the server in development mode, use the command:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+yarn dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To run the project in production mode, run the command:
 
-## Deploy on Vercel
+```
+yarn preview
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+After entering the command in the terminal, wait for the project to be built and click on the [http://localhost:3000](http://localhost:3000) link
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Build the project, please note this script is used to run the build of the project and then install it on the server.
+
+```
+yarn build
+```
+
+## Technologies used
+
+- [Next.js](https://nextjs.org)
+- [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
+- [zustand](https://zustand.docs.pmnd.rs/getting-started/introduction) - A small, fast, and scalable bearbones state management solution.
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
