@@ -6,14 +6,13 @@ import LearningItem from "../LearningItem/LearningItem";
 import { useTestsStore } from "@/store";
 
 export const LearningList = () => {
-  const { tests } = useTestsStore();
+  const { tests, changeItemStatusById } = useTestsStore();
 
-  console.log(tests);
   return (
     <UiFlexBox gap={14.6} wrap="wrap">
       {tests.map((item) => (
         <LearningItem
-          onClick={() => console.log(item.id)}
+          onClick={() => changeItemStatusById(item.id)}
           key={item.id}
           item={item}
         />
