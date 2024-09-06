@@ -5,3 +5,7 @@
   padding: 48px 16px 16px;
   background-color: var(--background-grey);
 }
+
+.container.withNavigation {
+  padding: 48px 16px 98px;
+}
