@@ -1,6 +1,11 @@
 .container {
-  max-width: 328px;
+  max-width: calc(328px + 16px * 2);
+  height: 100%;
   margin: 0 auto;
   padding: 48px 16px 16px;
   background-color: var(--background-grey);
+}
+
+.container.withNavigation {
+  padding: 48px 16px 98px;
 }

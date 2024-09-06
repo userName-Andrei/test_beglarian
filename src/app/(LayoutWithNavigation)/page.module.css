@@ -1,0 +1,17 @@
+.content {
+  padding-bottom: 90px;
+}
+
+.header {
+  width: 100%;
+  padding: 15px 0px;
+  margin-bottom: 8px;
+}
+
+.text {
+  font-size: var(--fz18);
+  font-style: italic;
+  font-weight: var(--medium);
+  line-height: 144%;
+  padding-right: 5px;
+}

@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { Icon } from "./types";
 
-const RoundArrowRight: FC<Icon> = ({ fill = "#6B2ABC", ...props }) => {
+const RoundArrowRightIcon: FC<Icon> = ({ fill = "#6B2ABC", ...props }) => {
   return (
     <svg
       width="24"
@@ -24,4 +24,4 @@ const RoundArrowRight: FC<Icon> = ({ fill = "#6B2ABC", ...props }) => {
   );
 };
 
-export default RoundArrowRight;
+export default RoundArrowRightIcon;

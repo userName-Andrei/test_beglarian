@@ -1,0 +1,5 @@
+.info {
+  font-weight: var(--regular);
+  font-size: var(--fz14);
+  line-height: 143%;
+}
