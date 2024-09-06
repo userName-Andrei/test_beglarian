@@ -10,7 +10,6 @@ interface IconBoxRoundProps {
   backgroundColor?: string;
   backgroundOpacity?: number;
   width?: number;
-  height?: number;
   style?: React.CSSProperties;
 }
 
@@ -40,7 +39,7 @@ const IconBoxRound: FC<IconBoxRoundProps> = ({
         className={styles.background}
         style={{ backgroundColor, opacity: backgroundOpacity }}
       ></div>
-      {iconJSX}
+      <div className={styles.icon}>{iconJSX}</div>
     </UiFlexBox>
   );
 };

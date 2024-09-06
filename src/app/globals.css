@@ -11,6 +11,7 @@
   --carrot: #ff7355;
   --purple: #6b2abc;
   --foreground: #171717;
+  --navbg-active: #ffe3dd;
   /* FONT-SIZES */
   --fz12: 12px;
   --fz14: 14px;
@@ -32,6 +33,7 @@
 html,
 body {
   max-width: 100vw;
+  height: 100%;
   overflow-x: hidden;
 }
 
