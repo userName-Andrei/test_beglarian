@@ -1,6 +1,6 @@
 .ball {
-  width: 71px;
-  height: 71px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   box-shadow: 0 0 4px 0 rgba(18, 25, 43, 0.04);
   position: relative;
@@ -14,7 +14,7 @@
   height: 100%;
   position: absolute;
   border-radius: 50%;
-  box-shadow: inset 0 -6px 0px #f1f1f1;
+  box-shadow: inset 0 -4px 0px #f1f1f1;
   transform: rotate(314deg);
 }
 
@@ -27,4 +27,15 @@
 .text {
   font-size: var(--fz18);
   line-height: 133%;
+}
+
+@media (min-width: 360px) {
+  .ball {
+    width: 71px;
+    height: 71px;
+  }
+
+  .ball::before {
+    box-shadow: inset 0 -6px 0px #f1f1f1;
+  }
 }
