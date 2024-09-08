@@ -9,29 +9,6 @@ import NavLink from "../UI/NavLink/NavLink";
 import LeaderboardIcon from "@/icons/LeaderboardIcon";
 import UserIcon from "@/icons/UserIcon";
 
-const navItems = [
-  {
-    name: "Home",
-    icon: <HomeIcon />,
-    url: "/",
-  },
-  {
-    name: "Your plan",
-    icon: <PlanIcon />,
-    url: "/my-plan",
-  },
-  {
-    name: "Leaderboard ",
-    icon: <LeaderboardIcon />,
-    url: "/leaderboard ",
-  },
-  {
-    name: "Profile",
-    icon: <UserIcon />,
-    url: "/profile",
-  },
-];
-
 const Navigation = () => {
   return (
     <div className={styles.wrapper}>
@@ -57,5 +34,28 @@ const Navigation = () => {
     </div>
   );
 };
+
+const navItems = [
+  {
+    name: "Home",
+    icon: <HomeIcon />,
+    url: "/",
+  },
+  {
+    name: "Your plan",
+    icon: <PlanIcon />,
+    url: "/my-plan",
+  },
+  {
+    name: "Leaderboard ",
+    icon: <LeaderboardIcon />,
+    url: "/leaderboard ",
+  },
+  {
+    name: "Profile",
+    icon: <UserIcon />,
+    url: "/profile",
+  },
+];
 
 export default Navigation;

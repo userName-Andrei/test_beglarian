@@ -3,17 +3,15 @@
 import { ReactNode, useEffect } from "react";
 import { useTestsStore } from "@/store";
 import { TestDataService } from "@/services";
-import test from "node:test";
 
+/**
+ * @description Client component for initializing the zustand state
+ *
+ */
 interface AppInitializerProps {
   children: ReactNode;
 }
 
-async function getTests() {
-  const tests = await TestDataService.get();
-
-  return tests;
-}
 /**
  *
  * @param {AppInitializerProps}

@@ -1,4 +1,4 @@
-import React, { FC, HTMLAttributes } from "react";
+import React, { FC } from "react";
 import UiFlexBox from "../UiFlexBox/UiFlexBox";
 import styles from "./IconBoxRound.module.css";
 import { joinClasses } from "@/utils/joinClasses";

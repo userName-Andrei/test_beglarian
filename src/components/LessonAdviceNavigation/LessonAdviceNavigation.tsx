@@ -10,6 +10,27 @@ import RoundArrowRightIcon from "@/icons/RoundArrowRightIcon";
 import GamepadIcon from "@/icons/GamepadIcon";
 import IconBoxRound from "../UI/IconBoxRound/IconBoxRound";
 
+const LessonAdviceNavigation = () => {
+  return (
+    <UiFlexBox className={styles.navWrapper} gap={8} wrap="wrap">
+      {navItems.map((item) => (
+        <UiSection key={item.name} className={styles.navItem} size="medium">
+          <UiFlexBox align="center" gap={8}>
+            <IconBoxRound
+              iconJSX={item.icon}
+              backgroundColor={item.color}
+              backgroundOpacity={item.opacity}
+              width={40}
+              style={{ flexShrink: 0 }}
+            />
+            <p className={styles.text}>{item.name}</p>
+          </UiFlexBox>
+        </UiSection>
+      ))}
+    </UiFlexBox>
+  );
+};
+
 const navItems = [
   {
     name: "DVSA Exam",
@@ -42,26 +63,5 @@ const navItems = [
     opacity: 0.1,
   },
 ];
-
-const LessonAdviceNavigation = () => {
-  return (
-    <UiFlexBox className={styles.navWrapper} gap={8} wrap="wrap">
-      {navItems.map((item) => (
-        <UiSection key={item.name} className={styles.navItem} size="medium">
-          <UiFlexBox align="center" gap={8}>
-            <IconBoxRound
-              iconJSX={item.icon}
-              backgroundColor={item.color}
-              backgroundOpacity={item.opacity}
-              width={40}
-              style={{ flexShrink: 0 }}
-            />
-            <p className={styles.text}>{item.name}</p>
-          </UiFlexBox>
-        </UiSection>
-      ))}
-    </UiFlexBox>
-  );
-};
 
 export default LessonAdviceNavigation;

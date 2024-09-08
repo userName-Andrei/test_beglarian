@@ -2,7 +2,7 @@
 
 import { joinClasses } from "@/utils/joinClasses";
 import Link, { LinkProps } from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 interface NavLinkProps extends LinkProps {
   href: string;

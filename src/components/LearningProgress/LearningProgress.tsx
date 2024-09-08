@@ -17,5 +17,3 @@ export const LearningProgress = () => {
     </UiFlexBox>
   );
 };
-
-// export default LearningProgress;
