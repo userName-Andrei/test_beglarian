@@ -10,7 +10,7 @@ interface ProgressBarProps {
 }
 
 const ProgressBar: FC<ProgressBarProps> = ({ maxValue, value, bars }) => {
-  const filledBars = Math.ceil((value / maxValue) * bars);
+  const filledBars = Math.floor((value / maxValue) * bars);
 
   return (
     <UiFlexBox align="center" gap={4}>
