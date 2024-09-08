@@ -1,14 +1,9 @@
+.navItem {
+  width: 100%;
+}
+
 .navWrapper {
   margin-bottom: 24px;
-}
-
-.navItem {
-  width: 160px;
-  cursor: pointer;
-}
-
-.navItem:nth-of-type(5) {
-  width: 100%;
 }
 
 .text {
@@ -16,4 +11,15 @@
   font-size: var(--fz16);
   line-height: 125%;
   color: var(--text-secondary);
+}
+
+@media (min-width: 360px) {
+  .navItem {
+    width: calc((100% - 8px) / 2);
+    cursor: pointer;
+  }
+
+  .navItem:nth-of-type(5) {
+    width: 100%;
+  }
 }
