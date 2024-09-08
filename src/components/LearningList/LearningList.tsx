@@ -9,7 +9,7 @@ export const LearningList = () => {
   const { tests, changeItemStatusById } = useTestsStore();
 
   return (
-    <UiFlexBox gap={14.6} wrap="wrap">
+    <UiFlexBox gap={14.6} wrap="wrap" justify="center">
       {tests.map((item) => (
         <LearningItem
           onClick={() => changeItemStatusById(item.id)}

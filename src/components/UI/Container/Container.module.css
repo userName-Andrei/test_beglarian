@@ -1,5 +1,5 @@
 .container {
-  max-width: calc(328px + 16px * 2);
+  max-width: var(--mobile-container-max-width);
   height: 100%;
   margin: 0 auto;
   padding: 48px 16px 16px;

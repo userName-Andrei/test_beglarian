@@ -8,6 +8,31 @@ import FavoritesIcon from "@/icons/FavoritesIcon";
 import styles from "./LessonNavigation.module.css";
 import IconBoxRound from "../UI/IconBoxRound/IconBoxRound";
 
+const LessonNavigation = () => {
+  return (
+    <UiFlexBox justify="space-between">
+      {lessonNav.map((item) => (
+        <UiFlexBox
+          key={item.name}
+          className={styles.item}
+          col
+          gap={8}
+          align="center"
+        >
+          <IconBoxRound
+            iconJSX={item.icon}
+            backgroundColor={item.color}
+            backgroundOpacity={item.opacity}
+            width={58}
+            style={{ flexShrink: 0 }}
+          />
+          <p className={styles.text}>{item.name}</p>
+        </UiFlexBox>
+      ))}
+    </UiFlexBox>
+  );
+};
+
 const lessonNav = [
   {
     name: "Mistakes",
@@ -34,30 +59,5 @@ const lessonNav = [
     opacity: 1,
   },
 ];
-
-const LessonNavigation = () => {
-  return (
-    <UiFlexBox justify="space-between">
-      {lessonNav.map((item) => (
-        <UiFlexBox
-          key={item.name}
-          className={styles.item}
-          col
-          gap={8}
-          align="center"
-        >
-          <IconBoxRound
-            iconJSX={item.icon}
-            backgroundColor={item.color}
-            backgroundOpacity={item.opacity}
-            width={58}
-            style={{ flexShrink: 0 }}
-          />
-          <p className={styles.text}>{item.name}</p>
-        </UiFlexBox>
-      ))}
-    </UiFlexBox>
-  );
-};
 
 export default LessonNavigation;

@@ -22,6 +22,10 @@
   --regular: 400;
   --medium: 500;
   --bold: 600;
+
+  /* SIZES */
+  /* (max width content + padding-left + padding-right) */
+  --mobile-container-max-width: calc(400px + 16px + 16px);
 }
 
 * {

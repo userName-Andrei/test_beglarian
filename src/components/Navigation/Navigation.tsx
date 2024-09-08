@@ -1,37 +1,13 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import styles from "./Navigation.module.css";
 import UiFlexBox from "../UI/UiFlexBox/UiFlexBox";
 import HomeIcon from "@/icons/HomeIcon";
-import { joinClasses } from "@/utils/joinClasses";
 import PlanIcon from "@/icons/PlanIcon";
 import NavLink from "../UI/NavLink/NavLink";
 import LeaderboardIcon from "@/icons/LeaderboardIcon";
 import UserIcon from "@/icons/UserIcon";
-
-const navItems = [
-  {
-    name: "Home",
-    icon: <HomeIcon />,
-    url: "/",
-  },
-  {
-    name: "Your plan",
-    icon: <PlanIcon />,
-    url: "/my-plan",
-  },
-  {
-    name: "Leaderboard ",
-    icon: <LeaderboardIcon />,
-    url: "/leaderboard ",
-  },
-  {
-    name: "Profile",
-    icon: <UserIcon />,
-    url: "/profile",
-  },
-];
 
 const Navigation = () => {
   return (
@@ -58,5 +34,28 @@ const Navigation = () => {
     </div>
   );
 };
+
+const navItems = [
+  {
+    name: "Home",
+    icon: <HomeIcon />,
+    url: "/",
+  },
+  {
+    name: "Your plan",
+    icon: <PlanIcon />,
+    url: "/my-plan",
+  },
+  {
+    name: "Leaderboard ",
+    icon: <LeaderboardIcon />,
+    url: "/leaderboard ",
+  },
+  {
+    name: "Profile",
+    icon: <UserIcon />,
+    url: "/profile",
+  },
+];
 
 export default Navigation;
